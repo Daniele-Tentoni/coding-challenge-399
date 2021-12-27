@@ -11,7 +11,7 @@ namespace coding_challenge_399
         // Step 0
         static int LetterSum(string word)
         {
-            return -1;
+            return word.Select(c => ((int)c) - 96).Sum();
         }
 
         // Step 1
