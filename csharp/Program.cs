@@ -34,7 +34,16 @@ namespace coding_challenge_399
         static string SingleWordWithGivenLetterSum(int length)
         {
             // Write here the code for step 1
-            return "";
+            System.IO.StreamReader sr = new System.IO.StreamReader("enable1.txt");
+            String line = sr.ReadLine();
+            while (line != null)
+            {
+                if (LetterSum(line) == 319)
+                    break;
+                line = sr.ReadLine();
+            }
+            sr.Close();
+            return line;
         }
 
         /// <summary>
