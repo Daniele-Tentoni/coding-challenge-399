@@ -19,7 +19,10 @@ namespace coding_challenge_399
         static int LetterSum(string word)
         {
             // Write here the code for step 0
-            return -1;
+            int i=0;
+            foreach(char c in word)
+                i+=(int)c-96;
+            return i;
         }
 
         /// <summary>
